@@ -5,19 +5,20 @@
     <title></title>
 </head>
 <body>
-<form method="post" cation="/user">
+<form method="post" action="/user">
     <label>Username
-        <input type="text" name="username">
+        <input type="text" name="username" th:value="${aUsername}">
     </label>
     <label>Password
         <input type="password" name="password">
     </label>
     <label>E-Mail
-        <input type="email" name="email">
+        <input type="email" name="email" th:value="${aEmail}">
     </label>
+    <input type="submit" name="Submit">
 
 
 </form>
-
+<p th:text="${error}"></p>
 </body>
 </html>
