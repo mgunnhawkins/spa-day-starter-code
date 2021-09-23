@@ -24,11 +24,12 @@ public class User {
 
     }
 
-    public User(String username, String email, String password) {
+    public User(String username, String email, String password, String verify) {
         this();
         this.username = username;
         this.email = email;
         this.password = password;
+        this.verify = verify;
     }
 
     public String getUsername() {
@@ -57,5 +58,9 @@ public class User {
 
     public String getVerify() {
         return verify;
+    }
+
+    public void setVerify(String verify) {
+        this.verify = verify;
     }
 }
